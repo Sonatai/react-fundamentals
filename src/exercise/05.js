@@ -15,7 +15,7 @@ import '../box-styles.css'
 // 💰 Here are available style attributes: backgroundColor, fontStyle
 
 const Box = ({size, style, children}) => {
-  const sizeClass = size ? `box--${size}` : ''
+  const sizeClass = `box--${size}` || ''
 
   return (
     <div className={`box ${sizeClass}`} style={{fontStyle: 'italic', ...style}}>
